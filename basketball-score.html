@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="basketball scoreboard">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <main id="main">
+            <div id="container">
+                <section class="board_background">
+                    <article class="home_teams home">
+                    <h1>Home</h1>
+                    <div class="home_score">
+                        <h2 class="home_score-inner" onclick="homeScoreReset()">0</h2>
+                    </div>
+                     <div class="home_score-buttons">
+                        <button class="btn home-one" onclick="home_increaseOne()">+1</button>
+                        <button class="btn home-two" onclick="home_increaseTwo()">+2</button>
+                        <button class="btn home-three" onclick="home_increaseThree()">+3</button>
+                    </div>
+                    </article>
+
+                    <article class="guest_teams guest">
+                    <h1>Guest</h1>
+                    <div class="guest_score guest">
+                        <h2 class="guest_score-inner" onclick="guestScoreReset()">0</h2>
+                    </div>
+                     <div class="guest_score-buttons">
+                        <button class="btn guest-one" onclick="count_increaseOne()">+1</button>
+                        <button class="btn guest-two" onclick="count_increaseTwo()">+2</button>
+                        <button class="btn guest-three" onclick="count_increaseThree()">+3</button>
+                    </div>
+                    </article>
+                </section> 
+            </div>
+        </main>
+        <script src="basketball-score.js" async defer></script>
+    </body>
+</html>
